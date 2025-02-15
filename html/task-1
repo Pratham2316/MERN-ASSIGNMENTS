@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Task-1 Table</title>
+</head>
+<body>
+
+<h3>Task-1</h3>
+
+<table border="1" width="400" height="200">
+    <tr>
+        <th width="150" height="50">Firstname</th>
+        <th width="150" height="50">Lastname</th>
+        <th width="100" height="50">Age</th>
+    </tr>
+    <tr>
+        <td width="150" height="50">Jill</td>
+        <td width="150" height="50">Smith</td>
+        <td width="100" height="50">50</td>
+    </tr>
+    <tr>
+        <td width="150" height="50">Eve</td>
+        <td width="150" height="50">Jackson</td>
+        <td width="100" height="50">94</td>
+    </tr>
+    <tr>
+        <td width="150" height="50">John</td>
+        <td width="150" height="50">Doe</td>
+        <td width="100" height="50">80</td>
+    </tr>
+</table>
+
+</body>
+</html>
