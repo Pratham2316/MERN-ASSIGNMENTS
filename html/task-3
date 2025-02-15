@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyperlink Example</title>
+</head>
+<body>
+
+<p>Click any of the following links</p>
+
+<a href="https://www.example.com" target="_blank">Opens in New</a> |
+<a href="https://www.example.com" target="_self">Opens in Self</a> |
+<a href="https://www.example.com" target="_parent">Opens in Parent</a> |
+<a href="https://www.example.com" target="_top">Opens in Body</a> |
+<a href="mailto:prathamsinghps8@gmail.com">Send email</a>
+
+</body>
+</html>
