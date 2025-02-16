@@ -1,34 +1,1427 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Task-1 Table</title>
+    <title>Mern Assignment</title>
 </head>
+
 <body>
+    <h1>HTML TASKS</h1>
+    <h2>Task-1</h2>
+    <table border="1" width="400" height="200">
+        <tr>
+            <th width="150" height="50">Firstname</th>
+            <th width="150" height="50">Lastname</th>
+            <th width="100" height="50">Age</th>
+        </tr>
+        <tr>
+            <td width="150" height="50">Jill</td>
+            <td width="150" height="50">Smith</td>
+            <td width="100" height="50">50</td>
+        </tr>
+        <tr>
+            <td width="150" height="50">Eve</td>
+            <td width="150" height="50">Jackson</td>
+            <td width="100" height="50">94</td>
+        </tr>
+        <tr>
+            <td width="150" height="50">John</td>
+            <td width="150" height="50">Doe</td>
+            <td width="100" height="50">80</td>
+        </tr>
+    </table>
+    <h2>Task-2</h2>
+    <p>Lists can be nested (list inside list):</p>
+    <ul>
+        <li>Coffee</li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+    <h2>Task-3</h2>
+    <p>Click any of the following links</p>
+    <a href="https://www.example.com" target="_blank">Opens in New</a> |
+    <a href="https://www.example.com" target="_self">Opens in Self</a> |
+    <a href="https://www.example.com" target="_parent">Opens in Parent</a> |
+    <a href="https://www.example.com" target="_top">Opens in Body</a> |
+    <a href="mailto:prathamsinghps8@gmail.com">Send email</a>
+    <h2>Task-4</h2>
+    <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname"><br><br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username"><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <label for="repassword">Re Password:</label>
+        <input type="password" id="repassword" name="repassword"><br><br>
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age"><br><br>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select><br><br>
+        <button type="submit">Save</button>
+    </form>
+    <h2>Task-5</h2>
+    <h2 style="color: blue;">Registration form</h2>
+    <form>
+        <table border="1">
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="firstname"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password" name="repassword"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" value="male"> Male
+                    <input type="radio" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="3" cols="30"></textarea></td>
+            </tr>
+        </table>
+    </form>
+    <h1>CSS Tasks</h1>
+    <h2>Task-1</h2>
 
-<h3>Task-1</h3>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table with Shapes</title>
+        <style>
+            /* Table Styling */
+            table {
+                width: 60%;
+                margin: 20px auto;
+                border-collapse: collapse;
+                background-color: #b0e0e6;
+            }
 
-<table border="1" width="400" height="200">
-    <tr>
-        <th width="150" height="50">Firstname</th>
-        <th width="150" height="50">Lastname</th>
-        <th width="100" height="50">Age</th>
-    </tr>
-    <tr>
-        <td width="150" height="50">Jill</td>
-        <td width="150" height="50">Smith</td>
-        <td width="100" height="50">50</td>
-    </tr>
-    <tr>
-        <td width="150" height="50">Eve</td>
-        <td width="150" height="50">Jackson</td>
-        <td width="100" height="50">94</td>
-    </tr>
-    <tr>
-        <td width="150" height="50">John</td>
-        <td width="150" height="50">Doe</td>
-        <td width="100" height="50">80</td>
-    </tr>
-</table>
+            th,
+            td {
+                border: 2px solid black;
+                padding: 10px;
+                text-align: center;
+            }
 
-</body>
+            th {
+                background-color: #6ab5c6;
+                font-weight: bold;
+            }
+
+            /* Rounded borders for table */
+            th,
+            td:first-child {
+                border-top-left-radius: 15px;
+                border-bottom-left-radius: 15px;
+            }
+
+            td:last-child {
+                border-top-right-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+
+            /* Shape Container */
+            .shape-container {
+                display: grid;
+                grid-template-columns: repeat(3, 120px);
+                grid-gap: 20px;
+                justify-content: center;
+                margin-top: 50px;
+            }
+
+            /* Base Shape Styles */
+            .shape {
+                width: 120px;
+                height: 80px;
+                border: 4px solid #79C142;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            /* Rounded Rectangle */
+            .rounded-rectangle {
+                border-radius: 20px;
+            }
+
+            /* More Rounded Rectangle */
+            .soft-rounded {
+                border-radius: 35px;
+            }
+
+            /* Oval Shape */
+            .oval {
+                border-radius: 50%;
+                width: 140px;
+            }
+
+            /* Partially Rounded Shape (One Side) */
+            .one-side-rounded {
+                border-radius: 50px 0px 50px 0px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <!-- Table -->
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+
+        <!-- Shapes -->
+        <div class="shape-container">
+            <div class="shape rounded-rectangle"></div>
+            <div class="shape rounded-rectangle"></div>
+            <div class="shape soft-rounded"></div>
+            <div class="shape soft-rounded"></div>
+            <div class="shape rounded-rectangle"></div>
+            <div class="shape soft-rounded"></div>
+            <div class="shape oval"></div>
+            <div class="shape rounded-rectangle"></div>
+            <div class="shape one-side-rounded"></div>
+        </div>
+
+        <h2>Task-2</h2>
+
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Navigation Bars</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                }
+
+                /* Title Styling */
+                h2 {
+                    font-weight: bold;
+                }
+
+                /* Container to align both nav bars */
+                .container {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: flex-start;
+                    margin-top: 30px;
+                }
+
+                /* Vertical Navigation Bar */
+                .vertical-nav {
+                    width: 180px;
+                    border: 2px solid black;
+                }
+
+                .vertical-nav a {
+                    display: block;
+                    padding: 10px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    border-bottom: 1px solid white;
+                }
+
+                .vertical-nav .home {
+                    background-color: orange;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .vertical-nav .links {
+                    background-color: lightblue;
+                    color: blue;
+                }
+
+                /* Horizontal Navigation Bar */
+                .horizontal-nav {
+                    display: flex;
+                    border: 2px solid black;
+                    width: 400px;
+                    background-color: lightgray;
+                }
+
+                .horizontal-nav a {
+                    flex: 1;
+                    padding: 10px;
+                    text-align: center;
+                    text-decoration: none;
+                    font-size: 18px;
+                    border-right: 2px solid blue;
+                }
+
+                .horizontal-nav a:last-child {
+                    border-right: none;
+                }
+
+                .horizontal-nav .home {
+                    background-color: gray;
+                    color: white;
+                    font-weight: bold;
+                }
+
+                .horizontal-nav .links {
+                    color: blue;
+                }
+            </style>
+        </head>
+
+        <body>
+
+            <!-- Vertical Navigation Bar -->
+            <h2>Vertical Navigation Bar</h2>
+            <div class="container">
+                <div class="vertical-nav">
+                    <a href="#" class="home">Home</a>
+                    <a href="#" class="links">Java</a>
+                    <a href="#" class="links">CSS</a>
+                    <a href="#" class="links">HTML</a>
+                    <a href="#" class="links">Bootstrap</a>
+                </div>
+
+                <!-- Horizontal Navigation Bar -->
+                <div>
+                    <h2>Horizontal Navigation Bar</h2>
+                    <div class="horizontal-nav">
+                        <a href="#" class="home">Home</a>
+                        <a href="#" class="links">Java</a>
+                        <a href="#" class="links">HTML</a>
+                        <a href="#" class="links">CSS</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Task-3</h2>
+
+
+            <body>
+
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Company</th>
+                                <th>Contact</th>
+                                <th>Country</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Alfreds Futterkiste</td>
+                                <td>Maria Anders</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Berglunds snabbköp</td>
+                                <td>Christina Berglund</td>
+                                <td>Sweden</td>
+                            </tr>
+                            <tr>
+                                <td>Centro comercial Moctezuma</td>
+                                <td>Francisco Chang</td>
+                                <td>Mexico</td>
+                            </tr>
+                            <tr>
+                                <td>Ernst Handel</td>
+                                <td>Roland Mendel</td>
+                                <td>Austria</td>
+                            </tr>
+                            <tr>
+                                <td>Island Trading</td>
+                                <td>Helen Bennett</td>
+                                <td>UK</td>
+                            </tr>
+                            <tr>
+                                <td>Königlich Essen</td>
+                                <td>Philip Cramer</td>
+                                <td>Germany</td>
+                            </tr>
+                            <tr>
+                                <td>Laughing Bacchus Winecellars</td>
+                                <td>Yoshi Tannamuri</td>
+                                <td>Canada</td>
+                            </tr>
+                            <tr>
+                                <td>Magazzini Alimentari Riuniti</td>
+                                <td>Giovanni Rovelli</td>
+                                <td>Italy</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h2>Task-4</h2>
+
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>Hoverable Sidenav Buttons</title>
+                    <style>
+                        .sidenav {
+                            position: fixed;
+                            left: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 60px;
+                        }
+
+                        .sidenav a {
+                            display: block;
+                            width: 60px;
+                            height: 50px;
+                            margin: 5px 0;
+                            text-decoration: none;
+                            transition: 0.3s;
+                            padding: 15px;
+                            text-align: center;
+                            font-size: 20px;
+                            color: white;
+                            border-radius: 5px;
+                        }
+
+                        .sidenav a:nth-child(1) {
+                            background-color: #059669;
+                        }
+
+                        /* Green */
+                        .sidenav a:nth-child(2) {
+                            background-color: #1D4ED8;
+                        }
+
+                        /* Blue */
+                        .sidenav a:nth-child(3) {
+                            background-color: #DC2626;
+                        }
+
+                        /* Red */
+                        .sidenav a:nth-child(4) {
+                            background-color: #4B5563;
+                        }
+
+                        /* Dark Gray */
+
+                        .sidenav a:hover {
+                            width: 150px;
+                        }
+
+                        .content {
+                            margin-left: 80px;
+                            padding: 20px;
+                        }
+
+                        h1 {
+                            font-size: 24px;
+                        }
+                    </style>
+                </head>
+
+                <body>
+
+                    <div class="sidenav">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+
+                    <div class="content">
+                        <h1><b>Hoverable Sidenav Buttons</b></h1>
+                        <p>Hover over the buttons in the left side navigation to open them.</p>
+                    </div>
+
+                    <head>
+                        <title>My First Styled Page</title>
+                        <style>
+                            .container {
+                                background-color: #c4c42e;
+                                /* Yellow box */
+                                width: 700px;
+                                padding: 20px;
+                                border: 1px solid black;
+                            }
+
+                            h1 {
+                                color: purple;
+                                font-size: 2em;
+                            }
+
+                            .sidebar {
+                                float: left;
+                                width: 160px;
+                                padding: 10px;
+                            }
+
+                            .sidebar a {
+                                display: block;
+                                text-decoration: none;
+                                font-weight: bold;
+                                padding: 5px;
+                                margin-bottom: 5px;
+                                background: white;
+                                width: 100px;
+                                border: 1px solid black;
+                            }
+
+                            .sidebar a:nth-child(odd) {
+                                color: purple;
+                            }
+
+                            .sidebar a:nth-child(even) {
+                                color: blue;
+                            }
+
+                            .sidebar a::after {
+                                content: "";
+                                display: inline-block;
+                                background: black;
+                                width: 10px;
+                                height: 15px;
+                                margin-left: 5px;
+                            }
+
+                            .content {
+                                margin-left: 180px;
+                            }
+
+                            p {
+                                color: black;
+                            }
+
+                            hr {
+                                border: 0;
+                                border-top: 1px dashed black;
+                            }
+
+                            em {
+                                color: purple;
+                            }
+                        </style>
+                    </head>
+
+                    <body>
+                        <h2>Task-5</h2>
+                        <div class="container">
+                            <div class="sidebar">
+                                <a href="#">Home page</a>
+                                <a href="#">Musings</a>
+                                <a href="#">My town</a>
+                                <a href="#">Links</a>
+                            </div>
+
+                            <div class="content">
+                                <h1>My first styled page</h1>
+                                <p>Welcome to my styled page!</p>
+
+                                <p>It lacks images, but at least it has style. And it has links, even if they don't go
+                                    anywhere...</p>
+
+                                <p>There should be more here, but I don't know what yet.</p>
+
+                                <hr>
+
+                                <p><em>Made 5 April 2004</em><br>
+                                    <em>by myself.</em>
+                                </p>
+                            </div>
+                        </div>
+
+                        <head>
+                            <meta charset="UTF-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                            <title>Login Form</title>
+                            <style>
+                                .login-container {
+                                    background-color: white;
+                                    padding: 20px;
+                                    width: 350px;
+                                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                                    border-radius: 8px;
+                                    text-align: center;
+                                }
+
+                                .profile-img {
+                                    width: 100px;
+                                    height: 100px;
+                                    border-radius: 50%;
+                                    margin-bottom: 10px;
+                                }
+
+                                h2 {
+                                    margin-bottom: 15px;
+                                    color: #333;
+                                }
+
+                                label {
+                                    display: block;
+                                    text-align: left;
+                                    font-weight: bold;
+                                    margin: 10px 0 5px;
+                                }
+
+                                input[type="text"],
+                                input[type="password"] {
+                                    width: 100%;
+                                    padding: 8px;
+                                    margin-bottom: 10px;
+                                    border: 1px solid #ccc;
+                                    border-radius: 4px;
+                                }
+
+                                .login-btn {
+                                    width: 100%;
+                                    padding: 10px;
+                                    background-color: #4CAF50;
+                                    color: white;
+                                    border: none;
+                                    cursor: pointer;
+                                    border-radius: 4px;
+                                    font-size: 16px;
+                                }
+
+                                .login-btn:hover {
+                                    background-color: #45a049;
+                                }
+
+                                .checkbox-container {
+                                    text-align: left;
+                                    margin: 10px 0;
+                                }
+
+                                .cancel-btn {
+                                    background-color: #e74c3c;
+                                    border: none;
+                                    color: white;
+                                    padding: 8px 20px;
+                                    cursor: pointer;
+                                    border-radius: 4px;
+                                    font-size: 14px;
+                                }
+
+                                .cancel-btn:hover {
+                                    background-color: #c0392b;
+                                }
+
+                                .forgot-password {
+                                    float: right;
+                                    font-size: 14px;
+                                }
+
+                                .forgot-password a {
+                                    text-decoration: none;
+                                    color: #3498db;
+                                }
+
+                                .forgot-password a:hover {
+                                    text-decoration: underline;
+                                }
+
+                                .bottom-section {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    margin-top: 10px;
+                                    border-top: 1px solid #ccc;
+                                    padding-top: 10px;
+                                }
+                            </style>
+                        </head>
+                        <h2>Task-6</h2>
+
+                        <body>
+
+                            <div class="login-container">
+                                <img src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="Profile Image"
+                                    class="profile-img">
+
+                                <label for="username">Username</label>
+                                <input type="text" id="username" placeholder="Enter Username">
+
+                                <label for="password">Password</label>
+                                <input type="password" id="password" placeholder="Enter Password">
+
+                                <button class="login-btn">Login</button>
+
+                                <div class="checkbox-container">
+                                    <input type="checkbox" id="remember">
+                                    <label for="remember" style="display: inline;">Remember me</label>
+                                </div>
+
+                                <div class="bottom-section">
+                                    <button class="cancel-btn">Cancel</button>
+                                    <span class="forgot-password"><a href="#">Forgot password?</a></span>
+                                </div>
+                            </div>
+
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Registration Form</title>
+                                <style>
+                                    .form-container {
+                                        background-color: #702030;
+                                        padding: 30px;
+                                        border-radius: 8px;
+                                        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                                        width: 400px;
+                                    }
+
+                                    label {
+                                        display: block;
+                                        margin: 10px 0 5px;
+                                        color: black;
+                                        font-weight: bold;
+                                    }
+
+                                    input,
+                                    select,
+                                    textarea {
+                                        width: 100%;
+                                        padding: 8px;
+                                        margin-bottom: 10px;
+                                        border: 1px solid #ccc;
+                                        border-radius: 4px;
+                                    }
+
+                                    .gender-options {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        margin-bottom: 10px;
+                                        color: black;
+                                    }
+
+                                    .register-btn {
+                                        width: 100%;
+                                        padding: 10px;
+                                        background-color: black;
+                                        color: black;
+                                        font-size: 16px;
+                                        font-weight: bold;
+                                        border: none;
+                                        cursor: pointer;
+                                        border-radius: 4px;
+                                    }
+
+                                    .register-btn:hover {
+                                        background-color: #f1f1f1;
+                                    }
+                                </style>
+                            </head>
+                            <h2>Task-7</h2>
+
+                            <body>
+
+                                <div class="form-container">
+                                    <form>
+                                        <label for="name">Name:</label>
+                                        <input type="text" id="name" placeholder="your name">
+
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" placeholder="your email">
+
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" placeholder="">
+
+                                        <label for="phone">Phone Number:</label>
+                                        <input type="tel" id="phone" placeholder="">
+
+                                        <label>Gender:</label>
+                                        <div class="gender-options">
+                                            <input type="radio" name="gender" value="male"> Male
+                                            <input type="radio" name="gender" value="female"> Female
+                                            <input type="radio" name="gender" value="other"> Other
+                                        </div>
+
+                                        <label for="language">Language:</label>
+                                        <select id="language">
+                                            <option>Select language</option>
+                                            <option>English</option>
+                                            <option>Spanish</option>
+                                            <option>French</option>
+                                        </select>
+
+                                        <label for="zip">Zip Code:</label>
+                                        <input type="text" id="zip" placeholder="">
+
+                                        <label for="about">About:</label>
+                                        <textarea id="about" rows="3" placeholder="Write about yourself..."></textarea>
+
+                                        <button class="register-btn">Register</button>
+                                    </form>
+                                </div>
+
+                                <head>
+                                    <meta charset="UTF-8">
+                                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                    <title>Ethnus Layout</title>
+                                    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                        rel="stylesheet">
+                                    <style>
+                                        .header {
+                                            background-color: #00AEEF;
+                                            padding: 10px;
+                                            text-align: center;
+                                            font-size: 24px;
+                                            font-weight: bold;
+                                            color: black;
+                                        }
+
+                                        .navbar {
+                                            background-color: #A0A0A0;
+                                            padding: 10px;
+                                        }
+
+                                        .navbar a {
+                                            color: white;
+                                            text-decoration: none;
+                                            font-weight: bold;
+                                            margin-right: 20px;
+                                        }
+
+                                        .main-content {
+                                            padding: 20px;
+                                            min-height: 400px;
+                                            background-color: #F5F5F5;
+                                        }
+
+                                        .sidebar {
+                                            background-color: #555;
+                                            color: white;
+                                            padding: 20px;
+                                            min-height: 400px;
+                                        }
+                                    </style>
+                                </head>
+                                <h1>BOOTSTRAP TASKS</h1>
+                                <h2>Task-1</h2>
+
+                                <body>
+
+                                    <div class="header">
+                                        Ethnus layout
+                                    </div>
+
+                                    <nav class="navbar d-flex justify-content-between">
+                                        <div>
+                                            <a href="#">HOME</a>
+                                            <a href="#">MENU</a>
+                                            <a href="#">ABOUT</a>
+                                            <a href="#">CONTACT</a>
+                                        </div>
+                                        <div>
+                                            <a href="#">SIGNUP</a>
+                                            <a href="#">LOGIN</a>
+                                        </div>
+                                    </nav>
+
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-md-9 main-content">
+                                                Write your content here
+                                            </div>
+                                            <div class="col-md-3 sidebar">
+                                                This is
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <head>
+                                        <meta charset="UTF-8">
+                                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                        <title>Builderz - Construction Company</title>
+                                        <link rel="stylesheet"
+                                            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+                                        <style>
+                                            body {
+                                                font-family: Arial, sans-serif;
+                                            }
+
+                                            .hero-section {
+                                                background: url('image.png') no-repeat center center/cover;
+                                                height: 100vh;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                text-align: center;
+                                                color: white;
+                                                font-size: 2rem;
+                                                font-weight: bold;
+                                                position: relative;
+                                            }
+
+                                            .hero-section .overlay {
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                width: 100%;
+                                                height: 100%;
+                                                background: rgba(0, 0, 0, 0.5);
+                                            }
+
+                                            .hero-content {
+                                                position: relative;
+                                                z-index: 1;
+                                            }
+
+                                            .service-section {
+                                                background: #002147;
+                                                color: white;
+                                                padding: 50px 0;
+                                            }
+
+                                            .service-box {
+                                                padding: 20px;
+                                                text-align: center;
+                                            }
+                                        </style>
+                                    </head>
+                                    <h2>Task-2</h2>
+
+                                    <body>
+                                        <header class="bg-warning py-2 text-dark">
+                                            <div class="container d-flex justify-content-between">
+                                                <h1>Builderz</h1>
+                                                <div>
+                                                    <span class="me-3">Opening Hours: Mon - Fri, 8:00 - 9:00</span>
+                                                    <span class="me-3">Call Us: +012 345 6789</span>
+                                                    <span>Email: info@example.com</span>
+                                                </div>
+                                            </div>
+                                        </header>
+
+                                        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                                            <div class="container">
+                                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#navbarNav">
+                                                    <span class="navbar-toggler-icon"></span>
+                                                </button>
+                                                <div class="collapse navbar-collapse" id="navbarNav">
+                                                    <ul class="navbar-nav">
+                                                        <li class="nav-item"><a class="nav-link active"
+                                                                href="#">Home</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Services</a>
+                                                        </li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Projects</a>
+                                                        </li>
+                                                        <li class="nav-item"><a class="nav-link" href="#">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </nav>
+
+                                        <div class="hero-section">
+                                            <div class="overlay"></div>
+                                            <div class="hero-content">
+                                                <h2>We Are Professional</h2>
+                                                <h1>For Your Dream Project</h1>
+                                                <button class="btn btn-light mt-3">Get A Quote</button>
+                                            </div>
+                                        </div>
+
+                                        <section class="service-section text-center">
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="service-box">
+                                                            <h4>Expert Worker</h4>
+                                                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium
+                                                                ornare velit non.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="service-box">
+                                                            <h4>Quality Work</h4>
+                                                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium
+                                                                ornare velit non.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="service-box">
+                                                            <h4>24/7 Support</h4>
+                                                            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium
+                                                                ornare velit non.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                                        <script
+                                            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                                        <head>
+                                            <meta charset="UTF-8">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                            <title>Pricing Section</title>
+                                            <link
+                                                href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                                rel="stylesheet">
+                                            <style>
+                                                .pricing-header {
+                                                    max-width: 700px;
+                                                }
+
+                                                .card {
+                                                    border: 1px solid #ddd;
+                                                    border-radius: 10px;
+                                                }
+                                            </style>
+                                        </head>
+                                        <h2>Task-3</h2>
+
+                                        <body>
+                                            <div class="container py-5">
+                                                <div class="text-center pricing-header mx-auto mb-4">
+                                                    <h2 class="fw-bold">Pricing</h2>
+                                                    <p class="text-muted">Quickly build an effective pricing table for
+                                                        your potential customers with this Bootstrap example.</p>
+                                                </div>
+
+                                                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+                                                    <div class="col">
+                                                        <div class="card shadow-sm">
+                                                            <div class="card-header">
+                                                                <h4 class="my-0 fw-normal">Free</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h1 class="card-title pricing-card-title">$0 <small
+                                                                        class="text-muted">/ mo</small></h1>
+                                                                <ul class="list-unstyled mt-3 mb-4">
+                                                                    <li>10 users included</li>
+                                                                    <li>2 GB of storage</li>
+                                                                    <li>Email support</li>
+                                                                    <li>Help center access</li>
+                                                                </ul>
+                                                                <button type="button"
+                                                                    class="w-100 btn btn-lg btn-outline-primary">Sign up
+                                                                    for free</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <div class="card shadow-sm">
+                                                            <div class="card-header">
+                                                                <h4 class="my-0 fw-normal">Pro</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h1 class="card-title pricing-card-title">$15 <small
+                                                                        class="text-muted">/ mo</small></h1>
+                                                                <ul class="list-unstyled mt-3 mb-4">
+                                                                    <li>20 users included</li>
+                                                                    <li>10 GB of storage</li>
+                                                                    <li>Priority email support</li>
+                                                                    <li>Help center access</li>
+                                                                </ul>
+                                                                <button type="button"
+                                                                    class="w-100 btn btn-lg btn-primary">Get
+                                                                    started</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col">
+                                                        <div class="card shadow-sm">
+                                                            <div class="card-header">
+                                                                <h4 class="my-0 fw-normal">Enterprise</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <h1 class="card-title pricing-card-title">$29 <small
+                                                                        class="text-muted">/ mo</small></h1>
+                                                                <ul class="list-unstyled mt-3 mb-4">
+                                                                    <li>30 users included</li>
+                                                                    <li>15 GB of storage</li>
+                                                                    <li>Phone and email support</li>
+                                                                    <li>Help center access</li>
+                                                                </ul>
+                                                                <button type="button"
+                                                                    class="w-100 btn btn-lg btn-primary">Contact
+                                                                    us</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <script
+                                                src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                                            <h2>Task-4</h2>
+
+                                            <head>
+                                                <meta charset="UTF-8">
+                                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                                <title>Material Cards</title>
+                                                <link
+                                                    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                                    rel="stylesheet">
+                                                <style>
+                                                    .card {
+                                                        border-radius: 10px;
+                                                        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                                                        overflow: hidden;
+                                                        transition: 0.3s;
+                                                    }
+
+                                                    .card:hover {
+                                                        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+                                                    }
+
+                                                    .card img {
+                                                        width: 100%;
+                                                        height: 180px;
+                                                        object-fit: cover;
+                                                    }
+
+                                                    .card-body {
+                                                        text-align: center;
+                                                    }
+
+                                                    .card-footer a {
+                                                        text-decoration: none;
+                                                        color: orange;
+                                                        font-weight: bold;
+                                                        margin: 0 10px;
+                                                    }
+                                                </style>
+                                            </head>
+
+                                            <body>
+                                                <div class="container mt-5">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="card">
+                                                                <img src="https://source.unsplash.com/random/300x200/?technology"
+                                                                    alt="Card Image">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">MATERIAL CARDS</h5>
+                                                                    <p class="card-text">Cards for display in portfolio
+                                                                        style material design by Google.</p>
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                    <a href="#">LINK</a>
+                                                                    <a href="#">LINK</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="card">
+                                                                <img src="https://source.unsplash.com/random/300x200/?nature"
+                                                                    alt="Card Image">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">MATERIAL CARDS</h5>
+                                                                    <p class="card-text">Cards for display in portfolio
+                                                                        style material design by Google.</p>
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                    <a href="#">LINK</a>
+                                                                    <a href="#">LINK</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="card">
+                                                                <img src="https://source.unsplash.com/random/300x200/?abstract"
+                                                                    alt="Card Image">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">MATERIAL CARDS</h5>
+                                                                    <p class="card-text">Cards for display in portfolio
+                                                                        style material design by Google.</p>
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                    <a href="#">LINK</a>
+                                                                    <a href="#">LINK</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="card">
+                                                                <img src="https://source.unsplash.com/random/300x200/?business"
+                                                                    alt="Card Image">
+                                                                <div class="card-body">
+                                                                    <h5 class="card-title">MATERIAL CARDS</h5>
+                                                                    <p class="card-text">Cards for display in portfolio
+                                                                        style material design by Google.</p>
+                                                                </div>
+                                                                <div class="card-footer text-center">
+                                                                    <a href="#">LINK</a>
+                                                                    <a href="#">LINK</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <script
+                                                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                                                <head>
+                                                    <meta charset="UTF-8">
+                                                    <meta name="viewport"
+                                                        content="width=device-width, initial-scale=1.0">
+                                                    <title>Form Validation</title>
+                                                    <link
+                                                        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                                        rel="stylesheet">
+                                                    <style>
+                                                        .invalid-feedback {
+                                                            display: none;
+                                                            color: red;
+                                                        }
+
+                                                        .was-validated .form-control:invalid,
+                                                        .was-validated .form-select:invalid {
+                                                            border-color: red;
+                                                            background-color: #f8d7da;
+                                                        }
+
+                                                        .was-validated .form-control:invalid+.invalid-feedback,
+                                                        .was-validated .form-select:invalid+.invalid-feedback {
+                                                            display: block;
+                                                        }
+                                                    </style>
+                                                </head>
+                                                <h2>Task-5</h2>
+
+                                                <body>
+
+                                                    <div class="container mt-4">
+                                                        <form id="validationForm" class="needs-validation" novalidate>
+                                                            <div class="row">
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label class="form-label">First Name</label>
+                                                                    <input type="text" class="form-control" required>
+                                                                    <div class="invalid-feedback">Please supply your
+                                                                        first name</div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-3">
+                                                                    <label class="form-label">Last Name</label>
+                                                                    <input type="text" class="form-control" required>
+                                                                    <div class="invalid-feedback">Please supply your
+                                                                        last name</div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">E-Mail</label>
+                                                                <input type="email" class="form-control" required>
+                                                                <div class="invalid-feedback">Please supply your email
+                                                                    address</div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Phone #</label>
+                                                                <input type="tel" class="form-control" required>
+                                                                <div class="invalid-feedback">Please supply your phone
+                                                                    number</div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Address</label>
+                                                                <input type="text" class="form-control" required>
+                                                                <div class="invalid-feedback">Please supply your street
+                                                                    address</div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">City</label>
+                                                                <input type="text" class="form-control" required>
+                                                                <div class="invalid-feedback">Please supply your city
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">State</label>
+                                                                <select class="form-select" required>
+                                                                    <option value="">Please select your state</option>
+                                                                    <option value="NY">New York</option>
+                                                                    <option value="CA">California</option>
+                                                                    <option value="TX">Texas</option>
+                                                                </select>
+                                                                <div class="invalid-feedback">Please select your state
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Do you have hosting?</label>
+                                                                <div>
+                                                                    <input type="radio" name="hosting" value="yes"
+                                                                        required> Yes
+                                                                    <input type="radio" name="hosting" value="no"
+                                                                        required> No
+                                                                </div>
+                                                                <div class="invalid-feedback">Please select an option
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-3">
+                                                                <label class="form-label">Project Description</label>
+                                                                <textarea class="form-control" required></textarea>
+                                                                <div class="invalid-feedback">Please provide a project
+                                                                    description</div>
+                                                            </div>
+
+                                                            <button type="submit" class="btn btn-primary">Send</button>
+                                                        </form>
+                                                    </div>
+
+                                                    <script>
+                                                        (function () {
+                                                            'use strict';
+                                                            var form = document.getElementById('validationForm');
+                                                            form.addEventListener('submit', function (event) {
+                                                                if (!form.checkValidity()) {
+                                                                    event.preventDefault();
+                                                                    event.stopPropagation();
+                                                                }
+                                                                form.classList.add('was-validated');
+                                                            }, false);
+                                                        })();
+                                                    </script>
+
+                                                    <head>
+                                                        <meta charset="UTF-8">
+                                                        <meta name="viewport"
+                                                            content="width=device-width, initial-scale=1.0">
+                                                        <title>Bootstrap Form Validation</title>
+                                                        <link
+                                                            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+                                                            rel="stylesheet">
+                                                        <script
+                                                            src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+                                                        <style>
+                                                            .form-control:invalid {
+                                                                border-color: red;
+                                                                background-color: #fef2f2;
+                                                            }
+
+                                                            .form-control:invalid+.error-message {
+                                                                display: block;
+                                                                color: red;
+                                                                font-size: 14px;
+                                                            }
+
+                                                            .error-message {
+                                                                display: none;
+                                                            }
+
+                                                            .submit-btn {
+                                                                background-color: red;
+                                                                color: white;
+                                                                width: 100%;
+                                                            }
+                                                        </style>
+                                                    </head>
+                                                    <h2>Task-6</h2>
+
+                                                    <body>
+
+                                                        <div class="container mt-5">
+                                                            <form id="validationForm" class="needs-validation"
+                                                                novalidate>
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Name</label>
+                                                                    <input type="text" class="form-control" required>
+                                                                    <div class="error-message">Name is required</div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Email</label>
+                                                                    <input type="email" class="form-control" required>
+                                                                    <div class="error-message">Email is required</div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Password</label>
+                                                                    <input type="password" class="form-control"
+                                                                        required>
+                                                                    <div class="error-message">Password is required
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="mb-3">
+                                                                    <label class="form-label">Hobbies</label>
+                                                                    <select class="form-select" required>
+                                                                        <option value="">Select a hobby</option>
+                                                                        <option value="reading">Reading</option>
+                                                                        <option value="sports">Sports</option>
+                                                                        <option value="music">Music</option>
+                                                                    </select>
+                                                                    <div class="error-message">Please select a hobby
+                                                                    </div>
+                                                                </div>
+
+                                                                <button type="submit"
+                                                                    class="btn submit-btn">Submit</button>
+                                                            </form>
+                                                        </div>
+
+                                                        <script>
+                                                            (function () {
+                                                                'use strict';
+                                                                var form = document.getElementById('validationForm');
+                                                                form.addEventListener('submit', function (event) {
+                                                                    if (!form.checkValidity()) {
+                                                                        event.preventDefault();
+                                                                        event.stopPropagation();
+                                                                    }
+                                                                    form.classList.add('was-validated');
+                                                                }, false);
+                                                            })();
+                                                        </script>
+                                                    </body>
+
 </html>
